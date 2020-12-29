@@ -3,8 +3,6 @@ package com.android.example.roomwordsample
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 
-class WordViewModel
-{
     class WordViewModel(private val repository: WordRepository) : ViewModel() {
 
         // Using LiveData and caching what allWords returns has several benefits:
@@ -30,5 +28,3 @@ class WordViewModel
             throw IllegalArgumentException("Unknown ViewModel class")
         }
     }
-
-}
