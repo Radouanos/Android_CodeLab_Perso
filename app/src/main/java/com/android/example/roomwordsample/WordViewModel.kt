@@ -3,8 +3,7 @@ package com.android.example.roomwordsample
 import androidx.lifecycle.*
 import kotlinx.coroutines.launch
 
-    class WordViewModel(private val repository: WordRepository) : ViewModel() {
-
+class WordViewModel(private val repository: WordRepository) : ViewModel() {
         // Using LiveData and caching what allWords returns has several benefits:
         // - We can put an observer on the data (instead of polling for changes) and only update the
         //   the UI when the data actually changes.
